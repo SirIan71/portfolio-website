@@ -156,8 +156,14 @@ section {
   min-height: fit-content;
 }
 
+/* Fade in elements as they scroll into view */
 .section-container {
-  display: flex;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.section-container.in-view {
+  opacity: 1;
 }
 
 /* PROFILE SECTION */
